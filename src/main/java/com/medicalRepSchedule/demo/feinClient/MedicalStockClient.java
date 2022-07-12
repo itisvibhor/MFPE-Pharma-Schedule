@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 //@FeignClient("MEDICINESTOCK-SERVICE")
-@FeignClient(url="Stockservice-env.eba-wpcxgpxz.us-west-1.elasticbeanstalk.com/MedicineStockInformation", name = "MEDICINESTOCK-SERVICE")
+@FeignClient(url="http://stockservice-env.eba-wpcxgpxz.us-west-1.elasticbeanstalk.com/", name = "MEDICINESTOCK-SERVICE")
 public interface MedicalStockClient {
 	//THIS IS FEIGN CLIENT TO ACCESS DATA FROM MEDICINESTOCKSERVICE
 	//THIS METHOD PROVIDES NAME OF TABLETS ACCORDING TO THE AILMENT GIVEN
